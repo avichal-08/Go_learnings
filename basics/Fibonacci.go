@@ -1,8 +1,11 @@
 package main
 
 func fibonacci(x int) int {
-	if x <= 1 {
-		return x
+	a, b := 0, 1
+
+	for i := 2; i <= x; i++ {
+		a, b = b, a+b
 	}
-	return fibonacci(x-1) + fibonacci(x-2)
+
+	return b
 }

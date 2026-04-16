@@ -25,9 +25,23 @@ func main() {
 
 	//-------FIBONACCI-----------
 
-	/* terms := 10
-	for i := 0; i < terms; i++ {
-		fmt.Print(fibonacci(i), " ")
+	/* var terms int
+
+	fmt.Println("enter no of terms")
+
+	_, err := fmt.Scan(&terms)
+
+	if err != nil {
+		fmt.Println("Invalid input! Please enter a number.")
+		return
+	}
+
+	if terms < 1 {
+		fmt.Println("Invalid input, terms should be more than 0")
+	} else {
+		for i := 0; i < terms; i++ {
+			fmt.Print(fibonacci(i), " ")
+		}
 	} */
 
 	//---------------------------
